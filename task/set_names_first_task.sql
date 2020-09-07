@@ -1,6 +1,16 @@
 SET NAMES cp1251;
 
 use PBZ_1;
+/*drop table if exists teacher;*/
+/*drop table if exists subjects;*/
+
+insert subjects (id_number_subject, name_subject, number_of_hours, specialization, semester) values
+('12П','МиниЭВМ', 36, 'Эвм', 1),
+('14П', 'ПЭВМ', 72 , 'Эвм', 2),
+('17П', 'СУБДПК', 48,'Асои', 4),
+('18П', 'ВКcc', 52, 'Аcои', 6),
+('34П', 'Физика', 30, 'cл', 6),
+('22П', 'Аудит', 24, 'Бухучета', 3);
 
 insert teacher (id_number, surname, position, chair, specialization, telephone) values
 ('221Л', 'Фролов', 'Доцент', 'ЭВМ', 'Асои,ЭВМ', 487),
@@ -8,3 +18,11 @@ insert teacher (id_number, surname, position, chair, specialization, telephone) 
 ('225Л', 'Бойко', 'Профессор', 'АСУ', 'Аcои,ЭВМ', 112),
 ('430Л', 'Глазов', 'Ассистент', 'ТФ', 'сд', 421),
 ('110Л', 'Петров', 'Ассистент', 'Экономики', 'Международная экономика',324);
+
+insert teacher (id_number, surname, position, chair, specialization, telephone) values
+('221Л', 'Фролов', 'Доцент', 'ЭВМ', 'Асои,ЭВМ', 487),
+('222Л', 'Костин', 'Доцент','ЭВМ', 'ЭВМ', 543),
+('225Л', 'Бойко', 'Профессор', 'АСУ', 'Аcои,ЭВМ', 112),
+('430Л', 'Глазов', 'Ассистент', 'ТФ', 'сд', 421),
+('110Л', 'Петров', 'Ассистент', 'Экономики', 'Международная экономика',324);
+
