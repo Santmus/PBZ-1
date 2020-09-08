@@ -2,14 +2,14 @@ SET NAMES utf8;
 
 use PBZ_1;
 
-insert teacher (id_number, surname, position, chair, specialization, telephone) values
+insert teacher (id_number, surname, position, department, specialization, telephone) values
 ('221Л', 'Фролов', 'Доцент', 'ЭВМ', 'АСОИ,ЭВМ', 487),
 ('222Л', 'Костин', 'Доцент','ЭВМ', 'ЭВМ', 543),
 ('225Л', 'Бойко', 'Профессор', 'АСУ', 'АСОИ,ЭВМ', 112),
 ('430Л', 'Глазов', 'Ассистент', 'ТФ', 'СД', 421),
 ('110Л', 'Петров', 'Ассистент', 'Экономики', 'Международная экономика', 324);
 
-insert subjects (id_number_subject, name_subject, number_of_hours, specialization, semester) values
+insert subject (id_number_subject, name_subject, number_of_hours, specialization, semester) values
 ('12П','МиниЭВМ', 36, 'ЭВМ', 1),
 ('14П', 'ПЭВМ', 72 , 'ЭВМ', 2),
 ('17П', 'СУБД ПК', 48, 'АСОИ', 4),
