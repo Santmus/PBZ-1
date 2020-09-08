@@ -28,8 +28,8 @@ city varchar(20)
 
 create table supplier_project_part_number(
 id_p varchar(2),
-name_id_d varchar(2),
-id_pr varchar(2),
+id_d varchar(2),
+id_pr varchar(3),
 s int
 );
 
