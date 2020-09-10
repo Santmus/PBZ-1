@@ -1,12 +1,14 @@
  SET NAMES utf8;
- use PBZ_1;
+ USE PBZ_1;
  
  /*Получить полную информацию обо всех преподавателях.*/
- select * from teacher;
+ SELECT * FROM teacher;
  
   /*Получить полную информацию обо всех студенческих группах на специальности ЭВМ.*/
-  select * from student_group where (specialization = 'ЭВМ');
+ SELECT * FROM student_group WHERE (specialization = 'ЭВМ');
   
   /*Получить информацию о предметах, которые ведутся на специальности АСОИ.*/
-  select * from subjects where (specialization = 'АСОИ');
+ SELECT * FROM subject WHERE specialization = 'АСОИ';
+ 
+ 
   

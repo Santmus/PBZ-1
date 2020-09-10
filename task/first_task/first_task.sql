@@ -1,40 +1,41 @@
 DROP database IF EXISTS pbz_1;
 
-create database PBZ_1;
+CREATE DATABASE PBZ_1;
 
-use PBZ_1;
+USE PBZ_1;
 
-create table teacher
+CREATE TABLE teacher
 (
-id_number varchar(20) primary key,
-surname varchar(20),
-position varchar(20),
-department varchar(20),
-specialization varchar(30),
-telephone int 
+id_number VARCHAR(4) PRIMARY KEY,
+surname VARCHAR(10),
+position VARCHAR(10),
+department VARCHAR(20),
+specialization VARCHAR(30),
+phone_number INT 
 );
  
- create table subject(
- id_number_subject varchar(20) primary key,
- name_subject varchar(20),
- number_of_hours int check(number_of_hours > 0),
- specialization varchar(30),
- semester int
+ CREATE TABLE subject(
+ id_subject VARCHAR(3) PRIMARY KEY,
+ subject VARCHAR(20),
+ number_of_hours INT CHECK(number_of_hours > 0),
+ specialization VARCHAR(30),
+ semester INT
  );
  
- create table student_group(
- id_number_student_group varchar(20) primary key,
- name_student_group varchar(20),
- people int,
- specialization varchar(30),
- surname_of_the_headman varchar(20)
+CREATE TABLE student_group(
+ id_student_group VARCHAR(3) PRIMARY KEY,
+ student_group VARCHAR(4),
+ people INT,
+ specialization VARCHAR(30),
+ headman VARCHAR(15)
  );
  
- create table teacher_studies_at_group(
- id_number_student_group varchar(20),
- id_number_subject varchar(20),
- id_number varchar(20),
- number_of_audience int
+ CREATE TABLE teacher_studies_at_group(
+ id INT PRIMARY KEY,
+ group_number VARCHAR(20),
+ subject_number VARCHAR(20),
+ personal_number VARCHAR(20),
+ auditorium INT
  );
  
  

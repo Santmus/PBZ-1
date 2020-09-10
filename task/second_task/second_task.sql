@@ -1,35 +1,36 @@
-drop table if exists supplier;
-drop table if exists part;
-drop table if exists project;
-drop table if exists supplier_project_part_number;
+DROP TABLE IF EXISTS supplier;
+DROP TABLE IF EXISTS part;
+DROP TABLE IF EXISTS project;
+DROP TABLE IF EXISTS supplier_project_part_number;
 
-use PBZ_1;
+USE PBZ_1;
 
-create table supplier  (
-id_p varchar(2) primary key,
-name_id_p varchar(20),
-status int,
-city varchar(20)
+CREATE TABLE supplier  (
+id_p VARCHAR(2) PRIMARY KEY,
+name_id_p VARCHAR(20),
+status INT,
+city VARCHAR(20)
 );
 
-create table part (
-id_d varchar(2) primary key,
-name_id_d varchar(20),
-color varchar(20),
-size int,
-city varchar(20)
+CREATE TABLE part (
+id_d VARCHAR(2) PRIMARY KEY,
+name_id_d VARCHAR(20),
+color VARCHAR(20),
+size INT,
+city VARCHAR(20)
 ); 
 
-create table project  (
-id_pr varchar(3) primary key,
-name_id_pr varchar(20),
-city varchar(20)
+CREATE TABLE project  (
+id_pr VARCHAR(3) PRIMARY KEY,
+name_id_pr VARCHAR(20),
+city VARCHAR(20)
 );
 
-create table supplier_project_part_number(
-id_p varchar(2),
-id_d varchar(2),
-id_pr varchar(3),
-s int
+CREATE TABLE supplier_project_part_number(
+id INT PRIMARY KEY,
+id_p VARCHAR(2),
+id_d VARCHAR(2),
+id_pr VARCHAR(3),
+s INT
 );
 
