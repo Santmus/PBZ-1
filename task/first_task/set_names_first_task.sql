@@ -2,14 +2,14 @@ SET NAMES utf8;
 
 USE PBZ_1;
 
-INSERT teacher (id_number, surname, position, department, specialization, phone_number) values
+INSERT INTO teacher (id_number, surname, position, department, specialization, phone_number) VALUES
 ('221Л', 'Фролов', 'Доцент', 'ЭВМ', 'АСОИ,ЭВМ', 487),
 ('222Л', 'Костин', 'Доцент','ЭВМ', 'ЭВМ', 543),
 ('225Л', 'Бойко', 'Профессор', 'АСУ', 'АСОИ,ЭВМ', 112),
 ('430Л', 'Глазов', 'Ассистент', 'ТФ', 'СД', 421),
 ('110Л', 'Петров', 'Ассистент', 'Экономики', 'Международная экономика', 324);
 
-INSERT subject (id_subject, subject, number_of_hours, specialization, semester) values
+INSERT INTO subject (id_subject, subject, number_of_hours, specialization, semester) VALUES
 ('12П','МиниЭВМ', 36, 'ЭВМ', 1),
 ('14П', 'ПЭВМ', 72 , 'ЭВМ', 2),
 ('17П', 'СУБД ПК', 48, 'АСОИ', 4),
@@ -17,7 +17,7 @@ INSERT subject (id_subject, subject, number_of_hours, specialization, semester) 
 ('34П', 'Физика', 30, 'СД', 6),
 ('22П', 'Аудит', 24, 'Бухучета', 3);
 
-INSERT student_group (id_student_group, student_group, people, specialization, headman) values
+INSERT INTO student_group (id_student_group, student_group, people, specialization, headman) VALUES
 ('8Г', 'Э-12', 18, 'ЭВМ', 'Иванова'),
 ('7Г', 'Э-15', 22, 'ЭВМ', 'Сеткин'),
 ('4Г', 'АС-9', 24, 'АСОИ', 'Балабанов'),
@@ -26,7 +26,7 @@ INSERT student_group (id_student_group, student_group, people, specialization, h
 ('12Г', 'М-6', 16, 'Международная экономика', 'Трубин'),
 ('10Г', 'Б-4', 21, 'Бухучет', 'Зязюткин');
 
-INSERT teacher_studies_at_group (id, group_number, subject_number, personal_number, auditorium) values
+INSERT INTO teacher_studies_at_group (id, group_number, subject_number, personal_number, auditorium) VALUES
 ( 1, '8Г', '12П', '222Л', '112'),
 ( 2, '8Г', '14П', '221Л', '220'),
 ( 3, '8Г', '17П', '222Л', '112'),

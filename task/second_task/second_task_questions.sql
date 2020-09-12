@@ -1,4 +1,6 @@
  USE PBZ_1;
  
  /*Получить все отправки, где количество находится в диапазоне от 300 до 750 включительно.*/
-SELECT *FROM supplier_project_part_number WHERE s BETWEEN 300 AND 750;
+SELECT
+*FROM supplier_project_part_number
+WHERE s BETWEEN 300 AND 750;
