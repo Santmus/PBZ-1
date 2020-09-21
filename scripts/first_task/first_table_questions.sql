@@ -58,7 +58,7 @@ FROM student_group sg1,student_group sg2
 WHERE sg1.specialization = sg2.specialization and sg1.group_number != sg2.group_number; 
 
 /*11.Получить общее количество студентов, обучающихся на специальности ЭВМ.*/
-SELECT  SUM(people) 
+SELECT SUM(people) 
 FROM student_group
 WHERE specialization = 'ЭВМ';
  

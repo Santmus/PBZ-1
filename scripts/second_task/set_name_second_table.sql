@@ -2,14 +2,14 @@ SET NAMES utf8;
 
 USE PBZ_1;
 
-INSERT INTO supplier(id_p, name_id_p, status, city) 
+INSERT INTO supplier(supplier_id, supplier_name, status, city) 
 VALUES ('П1', 'Петров', 20, 'Москва'),
 ('П2', 'Синицын', 10, 'Таллин'),
 ('П3', 'Федоров', 30, 'Таллин'),
 ('П4', 'Чаянов', 20, 'Минск'),
 ('П5', 'Крюков', 30, 'Киев');
 
-INSERT INTO part(id_d, name_id_d, color, size, city) 
+INSERT INTO part(part_id, part_name, color, size, city) 
 VALUES ('Д1', 'Болт', 'Красный', 12, 'Москва'),
 ('Д2', 'Гайка', 'Зеленая', 17, 'Минск'),
 ('Д3', 'Диск', 'Черный', 17, 'Вильнюс'),
@@ -17,7 +17,7 @@ VALUES ('Д1', 'Болт', 'Красный', 12, 'Москва'),
 ('Д5', 'Корпус', 'Красный', 12, 'Минск'),
 ('Д6', 'Крышки', 'Красный', 19, 'Москва');
 
-INSERT INTO project(id_pr, name_id_pr, city) 
+INSERT INTO project(project_id, project_name, city) 
 VALUES ('ПР1', 'ИПР1', 'Минск'),
 ('ПР2', 'ИПР2', 'Таллин'),
 ('ПР3', 'ИПР3', 'Псков'),
@@ -26,7 +26,7 @@ VALUES ('ПР1', 'ИПР1', 'Минск'),
 ('ПР6', 'ИПР6', 'Саратов'),
 ('ПР7', 'ИПР7', 'Москва');
 
-INSERT INTO supplier_project_part_number(id, id_p, id_d, id_pr, s) 
+INSERT INTO supplier_project_part_number(id, supplier_id, part_id, project_id, sum) 
 VALUES (1, 'П1', 'Д1', 'ПР1', 200),
 (2, 'П1', 'Д1', 'ПР2', 700),
 (3, 'П2', 'Д3', 'ПР1', 400),
