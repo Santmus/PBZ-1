@@ -6,7 +6,7 @@ USE PBZ_1;
 
 CREATE TABLE teacher
 (
-id_number VARCHAR(4) PRIMARY KEY,
+personal_number VARCHAR(4) PRIMARY KEY,
 surname VARCHAR(10),
 position VARCHAR(10),
 department VARCHAR(20),
@@ -15,7 +15,7 @@ phone_number INT
 );
  
  CREATE TABLE subject(
- id_subject VARCHAR(3) PRIMARY KEY,
+ subject_number VARCHAR(3) PRIMARY KEY,
  subject VARCHAR(20),
  number_of_hours INT CHECK(number_of_hours > 0),
  specialization VARCHAR(30),
@@ -23,7 +23,7 @@ phone_number INT
  );
  
 CREATE TABLE student_group(
- id_student_group VARCHAR(3) PRIMARY KEY,
+ group_number VARCHAR(3) PRIMARY KEY,
  student_group VARCHAR(4),
  people INT,
  specialization VARCHAR(30),
