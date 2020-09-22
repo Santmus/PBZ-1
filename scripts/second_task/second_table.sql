@@ -1,9 +1,9 @@
+USE PBZ_1;
+
 DROP TABLE IF EXISTS supplier;
 DROP TABLE IF EXISTS part;
 DROP TABLE IF EXISTS project;
 DROP TABLE IF EXISTS supplier_project_part_number;
-
-USE PBZ_1;
 
 CREATE TABLE supplier  (
 supplier_id VARCHAR(2) PRIMARY KEY,
